@@ -1,0 +1,26 @@
+<html>
+<body>
+<h1 id="count"> 0 </h1>
+<div id="test">
+<span> hello </span>
+ </div>
+<button onclick="start()"> start </button>
+<button onclick="startLoop()"> hang </button>
+</body>
+<script>
+    var count = 0;
+    var element = document.getElementById("count");
+    var test = document.getElementById("test");
+console.log(test.innerText, test.innerHTML);
+function start() {
+    count++;
+    element.innerText = count;
+    alert('clicked')
+}
+
+function startLoop(){
+    for(var i=0;i<100000;i++){
+        console.log(i);
+    }
+}
+</script>  

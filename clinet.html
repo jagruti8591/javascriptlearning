@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1> test </h1>
+<div id="number"></div>
+</body>
+<script>
+fetch('http://localhost:5000/getRandomNumber')
+    .then(response => response.text())
+    .then(data => {
+    	var element = document.getElementById('number');
+    	element.innerText = data;
+    });
+</script>  
