@@ -1,0 +1,58 @@
+<html>
+<body>
+<h1 id="count"> 0 </h1>
+<div id="test">
+<span> hello </span>
+ </div>
+<button onclick="start()"> start </button>
+<button onclick="startLoop()"> hang </button>
+</body>
+<script>
+    var student1 = {
+        "id": 1,
+        name: 'abc',
+        "roll-id": 21,
+        address:{
+            city: 'Pune',
+            zipcode: 411037
+        },
+        trainings: ['JAVA', 'HTML']
+    };
+    var student2 = {
+        "id": 2,
+        name: 'xyz',
+        "roll-id": 21,
+        address:{
+            city: 'Pune',
+            zipcode: 411037
+        },
+        trainings: ['JAVA', 'HTML']
+    };
+     var student3 = {
+        "id": 3,
+        name: 'pqr',
+        "roll-id": 21,
+        address:{
+            city: 'Pune',
+            zipcode: 411037
+        },
+        trainings: ['HTML']
+    };
+
+    var students = [student1, student2, student3];
+    var newStudents = students.map(function (student){
+        student.age = 15;
+        return student;
+    });
+   students.forEach(function (student){
+        student.age = 15;
+        return student;
+    });
+   var studentsWithJava = students.filter(function(student){
+        if(student.trainings.indexOf('JAVA') !== -1){
+            return student;
+        }
+   })
+
+
+</script>  
